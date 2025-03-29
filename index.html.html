@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>네비게이션 바 확장 예제</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .section {
+      padding: 100px 20px;
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .media {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #444;
+      max-width: 700px;
+      margin: 0 auto 20px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 네비게이션 바 -->
+  <div class="navbar">
+    <a href="#jeho">제호경</a>
+    <a href="#gamin">강가민</a>
+    <a href="#bomin">강보민</a>
+    <a href="#together">함께하기</a>
+  </div>
+
+  <!-- 제호경 섹션 -->
+  <section id="jeho" class="section">
+    <h2>제호경</h2>
+    <p>엄마로서 충분히 멋지고, 한 사람의 여성으로서 세상에서 가장 빛나는 당신을 늘 응원해요.</p>
+    <img class="media" src="jeho.jpg" alt="제호경 사진">
+  </section>
+
+  <!-- 강가민 섹션 -->
+  <section id="gamin" class="section">
+    <h2>강가민</h2>
+    <p>세상에서 가장 귀한 너, 지금의 모든 순간이 너를 더 빛나게 해줄 거야. 사랑해, 그리고 언제나 응원해.</p>
+    <img class="media" src="gamin.jpg" alt="강가민 사진">
+  </section>
+
+  <!-- 강보민 섹션 -->
+  <section id="bomin" class="section">
+    <h2>강보민</h2>
+    <p>하루하루가 반짝이는 너, 세상에서 가장 사랑스럽고 소중한 우리 보민이.</p>
+    <img class="media" src="bomin.jpg" alt="강보민 사진">
+  </section>
+
+  <!-- 함께하기 섹션 -->
+  <section id="together" class="section">
+    <h2>함께하기</h2>
+    <p>우리 함께한 모든 순간, 이 작은 공간 안에 오래도록 따뜻하게 간직해두었어요.</p>
+    <video class="media" controls>
+      <source src="together.mp4" type="video/mp4">
+      브라우저가 비디오를 지원하지 않습니다.
+    </video>
+  </section>
+
+</body>
+</html>
